@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400mm"
+   height="400mm"
+   viewBox="0 0 400 400"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="Gon.svg"
+   inkscape:export-xdpi="26.881666"
+   inkscape:export-ydpi="26.881666"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Tao"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     inkscape:export-filename="layer1.svg"
+     inkscape:export-xdpi="25.4"
+     inkscape:export-ydpi="25.4">
+    <rect
+       style="display:inline;fill:#000000;stroke-width:0.391324"
+       id="rect603"
+       width="175"
+       height="100"
+       x="225"
+       y="300"
+       inkscape:label="Yin03_2" />
+    <rect
+       style="display:inline;fill:#000000;stroke-width:0.391324"
+       id="rect560"
+       width="175"
+       height="100"
+       x="0"
+       y="300"
+       inkscape:label="Yin03_1" />
+    <rect
+       style="display:inline;fill:#000000;stroke-width:0.391324"
+       id="rect600"
+       width="175"
+       height="100"
+       x="225"
+       y="150"
+       ry="0"
+       inkscape:label="Yin02_2" />
+    <rect
+       style="display:inline;fill:#000000;stroke-width:0.391324"
+       id="rect562"
+       width="175"
+       height="100"
+       x="0"
+       y="150"
+       ry="0"
+       inkscape:label="Yin02_1" />
+    <rect
+       style="display:inline;fill:#000000;stroke-width:0.391324"
+       id="rect564-5"
+       width="175"
+       height="100"
+       x="225"
+       y="0"
+       inkscape:label="Yin01_2" />
+    <rect
+       style="display:inline;fill:#000000;stroke-width:0.391324"
+       id="rect564"
+       width="175"
+       height="100"
+       x="0"
+       y="0"
+       inkscape:label="Yin01_1" />
+    <rect
+       style="display:none;fill:#000000;stroke-width:0.591627"
+       id="rect566"
+       width="400"
+       height="100"
+       x="0"
+       y="300"
+       inkscape:label="Yang03" />
+    <rect
+       style="display:none;fill:#000000;stroke-width:0.591627"
+       id="rect568"
+       width="400"
+       height="100"
+       x="0"
+       y="150"
+       ry="0"
+       inkscape:label="Yang02"
+       inkscape:export-filename="Yin.svg"
+       inkscape:export-xdpi="26.881666"
+       inkscape:export-ydpi="26.881666" />
+    <rect
+       style="display:none;fill:#000000;stroke-width:0.591627"
+       id="rect570"
+       width="400"
+       height="100"
+       x="0"
+       y="0"
+       inkscape:label="Yang01" />
+  </g>
+</svg>
