@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fortune_telling_of_tao/result_page.dart';
+import 'package:fortune_telling_of_tao/hexagram.dart';
 import './yin_yang_icon.dart';
 
 void main() {
@@ -109,6 +110,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                   context,
                                   MaterialPageRoute(builder: (context) => ResultPage()),
                                 );
+                              },
+                            ),
+                            ElevatedButton(
+                              child: Text("static変数取れてるかテスト"),
+                              onPressed: (){
+                                print("CONST_HEXAGRAMS.hexagrams[0].name : " + CONST_HEXAGRAMS.hexagrams[0].name);
+                                print("CONST_HEXAGRAMS.hexagrams[0].anotherLineMean : " + CONST_HEXAGRAMS.hexagrams[0].anotherLineMean);
+                                print("\n\n");
+                                print("CONST_HEXAGRAMS.hexagrams[1].name : " + CONST_HEXAGRAMS.hexagrams[1].name);
+                                print("CONST_HEXAGRAMS.hexagrams[1].finalLineMean : " + CONST_HEXAGRAMS.hexagrams[1].finalLineMean);
                               },
                             )
                           ],
