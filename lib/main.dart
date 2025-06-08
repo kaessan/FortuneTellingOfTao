@@ -118,8 +118,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 print("CONST_HEXAGRAMS.hexagrams[0].name : " + CONST_HEXAGRAMS.hexagrams[0].name);
                                 print("CONST_HEXAGRAMS.hexagrams[0].anotherLineMean : " + CONST_HEXAGRAMS.hexagrams[0].anotherLineMean);
                                 print("\n\n");
-                                print("CONST_HEXAGRAMS.hexagrams[1].name : " + CONST_HEXAGRAMS.hexagrams[1].name);
-                                print("CONST_HEXAGRAMS.hexagrams[1].finalLineMean : " + CONST_HEXAGRAMS.hexagrams[1].finalLineMean);
+                                print("CONST_HEXAGRAMS.hexagrams[1].name : " + CONST_HEXAGRAMS.hexagrams[12].name);
+                                print("CONST_HEXAGRAMS.hexagrams[1].finalLineMean : " + CONST_HEXAGRAMS.hexagrams[12].finalLineMean);
                               },
                             )
                           ],
