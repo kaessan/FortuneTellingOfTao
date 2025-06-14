@@ -51,9 +51,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String preResultText = "";
-  String postResultText = "";
-  String translationsResultText = "";
+  String hexagram = '';
+  int translations = 0;
 
 
   @override
@@ -100,15 +99,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Center(child: Text("上卦 : $preResultText")),
-                            Center(child: Text("下卦 : $postResultText")),
-                            Center(child: Text("爻位 : $translationsResultText")),
+                            Center(child: Text("テスト")),
                             ElevatedButton(
-                              child: Text("リザルトページ遷移(テスト用)"),
+                              child: Text("リザルトページ"),
                               onPressed: (){
+                                _fortunetelling();
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => ResultPage()),
+                                  MaterialPageRoute(builder: (context) => ResultPage(hexagram, translations)),
                                 );
                               },
                             ),
@@ -124,7 +122,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             )
                           ],
                         ),
-
                       ],
                     )
                 ),
@@ -138,13 +135,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           onPressed: _fortunetelling
                       ),
                     ),
-                  ),
-                ),
-                Container(
-                  child: Image.asset(
-                      width: 100,
-                      height: 100,
-                      "Assets/images/Ken.png"
                   ),
                 ),
               ],
@@ -171,12 +161,12 @@ class _MyHomePageState extends State<MyHomePage> {
     //
     //ここでは略筮法を記述する
 
-    List<String> yinYang = ["乾", "兌", "離", "震", "巽", "坎", "艮", "坤"];
+    //List<String> yinYang = ["乾", "兌", "離", "震", "巽", "坎", "艮", "坤"];
     int divingStick = 50;
 
-    String preResult = "";
-    String postResult = "";
-    String translationsResult = "";
+    int preResult = 0;
+    int postResult = 0;
+    int translationsResult = 0;
 
     //太極の決定
     divingStick--;
@@ -184,20 +174,32 @@ class _MyHomePageState extends State<MyHomePage> {
     //上卦の決定
     int random = math.Random().nextInt(divingStick-2) + 1;
     int result = (divingStick - random) % 8 + 1 - 1;
-    preResult = yinYang[result];
+    preResult = result;
+    print("上卦 : " + preResult.toString());
+    //preResult = yinYang[result];
     //print("上卦 : " + preResult);
 
     //下卦の決定
     random = math.Random().nextInt(divingStick-2) + 1 - 1;
     result = (divingStick - random) % 8 + 1;
-    postResult = yinYang[result];
+    postResult = result;
+    print("下卦 : " + postResult.toString());
+    //postResult = yinYang[result];
     //print("下卦 : " + postResult);
 
     //爻位の決定
     random = math.Random().nextInt(divingStick-2) + 1 - 1;
     result = (divingStick - random) % 6 + 1 - 1;
+    translationsResult = result;
+    print("爻位 : " + translationsResult.toString());
 
-    switch(result){
+    String binaryResult = "";
+    binaryResult += preResult.toRadixString(2).padLeft(3,'0');
+    binaryResult += postResult.toRadixString(2).padLeft(3,'0');
+
+    print(binaryResult);
+
+    /*switch(result){
       case 0 :
         translationsResult = "初爻";
         break;
@@ -215,12 +217,14 @@ class _MyHomePageState extends State<MyHomePage> {
       case 5 :
         translationsResult = "上爻";
         break;
-    }
+    }*/
 
     setState(() {
-      preResultText = preResult;
-      postResultText = postResult;
-      translationsResultText = translationsResult;
+      hexagram = binaryResult;
+      translations = translationsResult;
     });
+
+
+
   }
 }
